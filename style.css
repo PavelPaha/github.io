@@ -5,9 +5,8 @@
 
 }
 
-/*header*/
 header{
-	background: url("img/Mask Group.jpg") no-repeat;
+	background: url("img/header.jpg") no-repeat;
 	height: 581px;
 	font-family: "Open Sans", normal;
 	background-size: 100%;
@@ -48,86 +47,26 @@ header nav a:first-of-type{
 	text-align: left;
 	left: 0;
  }
-
  /*main*/
- main{
- 	margin-top: 83px;
- }
- .main-top{
- 	display: flex;
- 	flex-direction: row;
- 	justify-content: space-between;
- }
- .orientation-container-main{
+  .orientation-container-main{
  	width: 1200px;
 	margin: 0 auto;
  }
-h2 {
- 	font-family: 'Spectral SC', serif;
+ h1 {
+ 	margin-top: 50px;
+ 	font-family: Spectral SC;
+	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 55px;
 	color: #2E2F22;
-	margin-bottom: 50px;
 
  }
-select{
-	appearance: none !important;
-	border: 0 !important;
-	padding: 12px;
-	padding-left: 20px;
-	background: transparent;
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 22px;
-
-}
-
-.select-box{
-	display: block;
-	border-radius: 15px;
-	background-color: #d7d1c9;
-
-}
-
-#select-main-image{
-	padding: 12px 20px 0 12px;
-}
-
-/*content-flex*/
-
-.main-flex-content, .flex-content-footer{
-	display: flex;	
-	justify-content: space-between;
-}
-.main-flex-content-item{
-	width: 387px;
-}
-h3, h4{
-	font-family: Spectral SC;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 27px;
-	margin-top: 27px;
-	color: #2E2F22;
-}
-p{
-	margin-top: 8px;
-	margin-bottom: 12px; 
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 26px;
-	/* or 162% */
-
-
-	color: #2E2F22;
-}
-span{
+ .span{
+ 	margin-top: 8px;
+ }
+ span{
+ 	margin-right: 18px;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
@@ -138,225 +77,187 @@ span{
 
 	color: rgba(46, 47, 34, 0.7);
 }
-
-/*content2*/
-.main-flex-content{
-	position: relative;
-}
-.main-flex-content:last-child>.main-flex-content-item{
-	position: relative;
-	display: block;
-	width: 50%;
-	height: auto;
-	margin: 10px;
-
-}
-.main-flex-content:last-child>.main-flex-content-item>img{
-	width: 590px;
-/*	display: none;*/
-}
-
-.main-flex-content:last-child>.main-flex-content-item .span,
-.main-flex-content:last-child>.main-flex-content-item h3,
-.main-flex-content:last-child>.main-flex-content-item p{
-	position: absolute;
-	z-index: 10000;
-	color: white;
-	left: 82px;
-/*	display: none;*/
-}
-
-.main-flex-content:last-child>.main-flex-content-item h3{
-	top: 340px;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 30px;
-}
-
-.main-flex-content:last-child>.main-flex-content-item p{
-	top: 397px;
+main section.paragraph{
+	margin-top: 50px;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
-	line-height: 28px;
-}
-.span{
-	display: flex;
-	bottom: 61px;
-	width: 425px;
-	justify-content: space-between;
-}
-.span span{
-	color: rgba(255, 255, 255, 0.7);
-}
-/**/
-.button{
-	margin-top: 100px;
-	position: static;
-	text-align: center;
+	font-size: 16px;
+	line-height: 26px;
+	/* or 162% */
+
+
+	color: #2E2F22;
 
 }
-button, input[type="submit"]
-{padding: 12px 58px;
-	border-radius: 10px;
-	border: 1px solid  #202117;
+main img#post{
+	width: 100%;
+	margin-top: 40px;
+}
+figcaption{
 	font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-background: white;
-/* identical to box height */
-
-
-color: #202117;
-}
-
-article.information h2{
-	margin-top: 82px;
-	margin-bottom: 50px;
-	text-align: center;
-}
-.blockquote{
-	padding-left: 20px;
-	border-left: 3px solid #E5E5E5;
-}
-blockquote{
-	font-family: Open Sans;
-	font-style: italic;
+	font-style: normal;
 	font-weight: normal;
-	font-size: 30px;
-	line-height: 40px;
-	/* or 133% */
+	font-size: 14px;
+	line-height: 26px;
+	/* or 186% */
 
 
 	color: #2E2F22;
 }
-a{
-	color: inherit;
-}
-article.information>.orientation-container-main{
+.likes-and-social{
+	margin-top: 40px;
 	display: flex;
+	justify-content: space-between;
 }
-.text{
+
+.likes{
+	display: flex;
+	align-items: center;
+}
+.likes span{
+	margin-left: 14px;
+}
+
+.social-networks{
+	display: flex;
+	width: 240px;
+	justify-content: space-between;
+}
+main a{
+	display: inline-block;
+	text-decoration: none;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 49px;
+	color: #2E2F22;
+	margin-right: 26px;
+	margin-top: 37px;
+}
+
+.comments{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	padding: 50px;
-}
-p{
-	margin-bottom: 40px;
-}
-/*portfolio*/
-.portfolio h2{
-	margin-bottom: 50px;
-	margin-top: 85px;
-	text-align: center;
-}
-.portfolio>.orientation-container-main{
-	display: flex;
-	position: relative;
-}
-.portfolio>.text{
-	top: 5px;
-	display: inline-block;
-}
-.portfolio .main-flex-content-item{
-	width: 33%;
-	padding-right: 10px;
-}
-.portfolio .text{
-	position: absolute;
-	width: 300px;
-	top: 70px;
-}
-.portfolio .text h3,
-.portfolio .text h4,
-.portfolio .text p{
-	text-align: center;
-
-}
-.portfolio .text h4{
-	margin-top: 45px;
-	margin-bottom: 17px;
-}
-.portfolio .main-flex-content-item:nth-child(2) h3,
-.portfolio .main-flex-content-item:nth-child(2) h4,
-.portfolio .main-flex-content-item:nth-child(2) p{
-	color: white;
-}
-
-/*/*форма*/
-form{
-	width:996px;
-	margin: 0 auto;
-	background: url("img/form.png") no-repeat;
-	background-size: 996px;
-	overflow: hidden;
+	width: 794px;
+	background-color: #ECE1E1;
+	margin-top: 65px;
 	border-radius: 15px;
-	margin-bottom: 80px;
 }
-article h2{
-	text-align: center;
-	margin-top: 85px;
-	margin-bottom: 49px;
+.orientation-comments{
+	margin: 44px 101px;
 }
-.orientation-form{
-	margin: 53px 81px;
+
+.comment{
+	margin-bottom: 55px;
 }
-.input-flex{
+.comment .flex{
 	display: flex;
+	align-items: center;
 }
-.input-flex .input{
-	width: 50%;
-}
-.input label{
-	font-family: Spectral SC;
+.comment span{
+	margin-left: 13px;
+	font-family: Open Sans;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 18px;
-	line-height: 28px;
-	margin-bottom: 12px;
-
-
+	font-size: 16px;
+	line-height: 22px;
 	color: #2E2F22;
+	vertical-align: middle;
+
 }
-.input input, textarea{
-	width: 392px;
-	margin-top: 12px;
-	padding: 20px 0px 20px 20px;
-	background-color: rgba(255,255,255, 0.5);
-	border-radius: 15px;
-	border: 1px solid black;
+.comment p{
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 22px;
-	color: #202117;
-	opacity: 0.7;
+	color: #2E2F22;
+	margin-top: 14px;
 }
-.input:first-child{
-	margin-right: 20px;
-}
-textarea{
-	margin-top: 12px;
-	width: 100%;
-}
-.input-flex{
-	margin-bottom: 20px;
-}
-form .orientation-container .input[type="submit"]{
-	margin-top: 5px;
-	
+
+
+/*form*/
+
+
+.form h2{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 33px;
+	color: #2E2F22;
+	margin-bottom: 70px;
 
 }
-.button.send{
-	margin-top: 20px;
+
+input{
+	border: none;
+	border-bottom: 	1px solid #2E2F22;
+	margin-bottom: 35px;
+	width: 221px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #2E2F22;
 }
-.button.send input{
-	background: transparent;
+
+textarea{
+	border-radius: 	10px;
+	padding: 18px 20px;
+}
+form .orientation-form{
+	display: flex;	
+}
+form{
+	width: 680px;
+	
+}
+
+label, textarea{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #2E2F22;
+	margin-bottom: 15px;
+	margin-bottom: 15px;
+
+}
+
+textarea{
+	margin-left: auto;
+	margin-right: 0;
+}
+.input{
+	margin-right: 84px;
+}
+
+.form{
+	margin-top: 77px;
+	margin-left: 110px;
+
+}
+button{
+	padding: 12px 58px;
+	border-radius: 10px;
+	border: 1px solid  #202117;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	background: white;
+	color: #202117;
+	margin-top: 30px;
+}
+
+main{
+	margin-bottom: 81px;
 }
 /*footer*/
 footer{
@@ -378,16 +279,4 @@ footer nav a{
 	line-height: 25px;
 	color: #2E2F22;
 	text-decoration: none;
-}
-
-.none{
-	display: none
-}
-
-.important{
-	display: block !important;
-}
-
-.error{
-	color: red;
 }
