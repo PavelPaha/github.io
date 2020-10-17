@@ -3,53 +3,243 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+	<title>Blog Anne Sweet</title>
 </head>
 <body>
-	<article class="container">
-	<section>
-			<div class="wrapper">
-				<h1>This is text!</h1>
-				<div class="container__text">
-					<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Asperiores velit laboriosam aliquam, sapiente quo optio laudantium pariatur, iusto exercitationem itaque ratione! Quidem dolores est commodi mollitia eum aliquam, quisquam vitae nostrum minima veritatis sint porro maxime totam doloremque alias accusamus.</p>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam autem nihil delectus reprehenderit. Velit nulla quibusdam minus nostrum incidunt laudantium impedit doloribus officiis, beatae deleniti maiores molestias provident vel laborum optio sequi iure ipsam commodi pariatur quidem quae. Eos, fugiat, eveniet dolore molestias in sed? Excepturi quos consectetur pariatur quidem fugit officiis, consequuntur non ex architecto magnam harum, minima rerum est accusamus, repellat dolore itaque inventore delectus aliquid quia maxime id enim rem numquam. Quia delectus aliquam nobis rerum velit.</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi saepe cum, voluptas. Laudantium consequuntur ipsam, ullam unde suscipit, vel.</p>
-				</div>
-            </div>
-    </section>        
-    <section>
-    		<div class="wrapper" id="end_wrapper">
-				<h1>This is images and text</h1>
-			<div class="box_img_and_text">
-				<div class="item_image_and_text">
-					<div class="image" id="one_img">
-						<img url="https://sun9-42.userapi.com/Pto1dY-G8n9MjCmLCJHdr44HJd4gJ0h77u-rrw/1QlmnSL5VjA.jpg" alt="">
-					</div>
-					<div class="item_text">
-						<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Asperiores velit laboriosam aliquam, sapiente quo optio laudantium pariatur, iusto exercitationem itaque ratione! Quidem dolores est commodi mollitia eum aliquam, quisquam vitae nostrum minima veritatis sint porro maxime totam doloremque alias accusamus.</p>
-					</div>
-				</div>
-				<div class="item_image_and_text">
-					<div class="image" id="two_img">
-						<img url="https://sun9-14.userapi.com/dAISbo8SuvTL9TVT5JqDVlFicE4GTpLo4GpxAw/qVZhCp820yQ.jpg" alt="">
-					</div>
-					<div class="item_text">
-					    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam autem nihil delectus reprehenderit. Velit nulla quibusdam minus nostrum incidunt laudantium impedit doloribus officiis, beatae deleniti maiores molestias provident vel laborum optio sequi iure ipsam commodi pariatur quidem quae. Eos, fugiat, eveniet dolore molestias in sed? Excepturi quos consectetur pariatur quidem fugit officiis, consequuntur non ex architecto magnam harum, minima rerum est accusamus, repellat dolore itaque inventore delectus aliquid quia maxime id enim rem numquam. Quia delectus aliquam nobis rerum velit.</p>
-					</div>
-				</div>
-				<div class="item_image_and_text">
-					<div class="image"  id="three_img">
-						<img src="img/1300x400.jpg" alt="">
-					</div>
-					<div class="item_text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi saepe cum, voluptas. Laudantium consequuntur ipsam, ullam unde suscipit, vel.</p>
-					</div>
+	<header>
+		<div class="orientation-container-header">
+		<div class="logo"><a href=""><img src="img/logo.png" alt="Логотип"></a></div>
+		<nav>
+			
+			<a href="#articles">Статьи</a>
+			<a href="#me">Обо мне</a>
+			<a href="#portfolio">Портфолио</a>
+			<a href="#send-me">Написать мне</a>
+		</nav>
+		</div>
+	</header>
+	<main><a name="articles"></a>
+		<section>
+		<div class="orientation-container-main">
+		<div class="main-top">
+
+		<div class="main-top-flex"><h2>Все статьи</h2></div>
+		<div class="main-top-flex">
+		<div class="select-box">
+		<select name="themes" id="select1">
+			<option value="journey">Путешествия</option>
+			<option value="city">Город</option>
+			<option value="books">Книги</option>
+			<option value="photos">Фотографии</option>
+			<option value="recipes">Рецепты</option>
+			<option value="all" selected>Все статьи</option>
+
+			<!-- Кнопка «Выбрать тему» на главной странице должна быть свёрстана как выпадающий список, где варианты — это все теги статей, представленных в макете: путешествия, город, книги, фотографии, рецепты плюс категория все статьи. -->
+		</select>
+		<img id="select-main-image" src="img/select.png" alt="">
+		</div>
+		</div>
+		</div>
+
+		<div class="main-flex-content">
+			<div class="main-flex-content-item journey">
+				<img src="img/flex_content1.jpg">
+				<h3>Путешествие в Берлин в августе</h3>
+				<p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+				<div class="flex-content-footer">
+				<span>Теги: путешествия</span>
+				<span>29.09.2020</span>
 				</div>
 			</div>
+			<div class="main-flex-content-item city">
+				<img src="img/flex_content2.jpg">
+				<h3>Где выпить колдбрю в Москве</h3>
+				<p>Собрала для вас список любимых кофеен,
+				где подают лучший летний напиток.</p>
+				<div class="flex-content-footer">
+				<span>Теги: город</span>
+				<span>24.07.2020</span>
+				</div>
 			</div>
+			<div class="main-flex-content-item books">
+				<img src="img/flex_content3.jpg">
+				<h3>Прочитано: книжные рекомендации</h3>
+				<p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+				<div class="flex-content-footer">
+				<span>Теги: книги</span>
+				<span>15.07.2020</span>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="main-flex-content" >
+			<div class="main-flex-content-item photos">
+				<h3 class="big-block1">Снимки на плёнку</h3>
+				<p class="big-block1">Поделилась с вами весенними фотографиями, <br>
+и секретами удачных снимков.</p>
+				<div class="span">
+				<span class="big-block1">Теги: фотографии</span>
+				<span class="big-block1">29.06.2020</span>
+				</div>
+				<img class="big-block1" src="img/flex_2content1.jpg" alt="">
+
+			</div>
+
+			<div class="main-flex-content-item recipes">
+				<h3 class="big-block2">Домашний чизкейк</h3>
+				<p class="big-block2">Что может быть лучше чизкейка с сезонными <br>
+ягодами? Только домашний чизкейк!</p>
+				<div class="span">
+				<span class="big-block2">Теги: рецепты</span>
+				<span class="big-block2">24.06.2020</span>
+				</div>
+				
+			<img class="big-block2" src="img/flex_2content2.jpg" alt="">	
+			</div>
+		</div>
 	</section>
+	
+	</main>
+	<div class="button">
+	<button>Показать ещё</button>
+
+	</div>
+
+	<article class="information">
+		<a name="me"></a>
+		<h2>Обо мне</h2>
+		<div class="orientation-container-main">
+
+		<div class="image">
+		<img src="img/information.jpg">
+		</div>
+
+		<div class="text">
+		<div class="p">
+		<p>Всем привет! Меня зовут Аня, и это мой личный блог.
+		Здесь ты найдёшь рассказы о моих путешествиях, снимки
+		на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+		что мне инетресно.</p>
+
+		<p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+		портфолио. Ниже размещены несколько моих лучших
+		рабочих текстов. Буду рада новым сотрудничествам! Если вы хотите написать мне — это можно сделать в соцсетях
+		или через <a href="">форму</a>. Всегда приятно услышать обратную связь
+		от читателей и познакомиться поближе.</p>
+
+		<p>Приятного чтения!</p>
+		</div>
+		<div class="blockquote">
+		<blockquote>Я верю, что каждый раз пробуя новое,
+		выходящее за зону моего комфорта,
+		я действительно узнаю настояющую
+		себя. </blockquote>
+		</div>
+		</div>
+
+		</div>
 	</article>
+	<article class="portfolio">
+		<a name="portfolio"></a>
+		<h2>Портфолио</h2>
+		<div class="orientation-container-main">
+
+		<div class="main-flex-content-item important">
+		
+		<div class="text">
+			<h3>Блог HTML Academy</h3>
+			<h4>«Как учиться продуктивно»</h4>
+			<p>Про основные методы обучения,
+			которые помогут быстро и надолго
+			запомнить информацию.</p>
+		</div>
+		<img src="img/portfolio1.png">
+		</div>
+
+		<div class="main-flex-content-item important">
+		<img src="img/portfolio2.png">
+		<div class="text">
+			<h3>Журнал «LNK»</h3>
+			<h4>«Зачем поцели нужны человеку?
+			И какие они бывают»</h4>
+			<p>Поцелуи — повсеместная ежедневная
+			практика. Но зачем люди целуются?
+			Какие смысли вкладывают в этот ритуал?
+			И где корни этой практики?</p>
+		</div>
+		</div>
+
+		<div class="main-flex-content-item important">
+		
+		<div class="text">
+			<h3>Журнал «Т — Л»</h3>
+			<h4>«Советы по эффективной
+			удалённой работе»</h4>
+			<p>Поделилась лайфхаками, которые помогают
+			мне работать продуктивно из дома. </p>
+		</div>
+		<img src="img/portfolio3.png">
+		</div>
+	</article>
+	<div class="button">
+	<button>ПОКАЗАТЬ ЕЩЁ</button>
+	</div>
+	<article class="form">
+		<a name="send-me"></a>
+		<div class="orientation-container-main">
+		<h2>Написать мне</h2>
+		<form action="" onsubmit="valid(this)" id="form">
+			<div class="orientation-form">
+			<div class="input-flex">
+			<div class="input">
+			<label for="name">Ваше имя</label><br>
+			<input type="text" name="name" placeholder="Иван Иванов">
+			</div>
+
+			
+			<div class="input">
+			<label for="email">EMAIL</label><br>
+			<input type="text" name="email" placeholder="google@gmail.com">
+			</div>
+			</div>
+
+			<div class="input">
+			<label for="text">Сообщение</label><br>
+			<textarea form="form" name="text" id="" cols="112" rows="11" placeholder="Напишите здесь ваше сообщение."></textarea>
+			</div>
+			<div class="button send">
+			<input class="submit" type="submit" name="submit" value="ОТПРАВИТЬ" onclick="valid(document.getElementById('form'))">
+			</div>
+			</div>
+
+		</form>
+			
+		</div>
+
+	</article>
+	<footer>
+		<div class="orientation-container-main">
+		<nav>
+				<a href="">Вк</a>
+				<a href="">Телеграм</a>
+				<a href="">Инстаграм</a>
+				<a href="">Твиттер</a>
+			</nav>
+		</div>
+	</footer>
+	<script type="text/javascript" src="select.js"></script>
+	<script type="text/javascript" src="valid.js"></script>
 </body>
 </html>
