@@ -93,13 +93,25 @@ h1, h2, h3, h4, h5, h6{
     
 }
 .intro h1{
+
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 65px;
     text-transform: uppercase;
     line-height: 1.1;
 }
+.intro h1, .intro p{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
 
+.intro h1.active,
+.intro p.active
+{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
 .intro p{
     margin-top: 30px;
     font-size: 22px;
@@ -129,7 +141,9 @@ h1, h2, h3, h4, h5, h6{
     transition: background 0.2s;
 }
 .btn--red:hover{
-    background: #D73939;
+    background: #A82D2D;
+    border-bottom: 5px solid #6c7279;
+    padding-bottom: 15px;
 }
 
 
