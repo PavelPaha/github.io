@@ -511,9 +511,29 @@ footer{
 	}
 	nav.show{
 		display: flex;
+        padding: 15px;
+        
 	}
+    @keyframes colortext {
+        1%{
+            background: #31344e;
+        }
+        100%{
+            background: #7A7EA2;
+        }
+    }
+    nav.show a{
+        animation: colortext 1s  forwards;
+        font-size: 25px;
+        padding: 15px 0;
+        padding-right: 15px;
+        margin: 15px 0;
+        background: #7A7EA2;
+        border-radius: 15px;
+    }
 	nav a{
-		padding: 7px 15px;
+		padding:15px;
+        margin-left: 0;
 	}
 	.intro__inner h1{
 		font-size: 40px;
