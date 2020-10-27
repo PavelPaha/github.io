@@ -21,6 +21,14 @@ $(function(){
 		if (scrollPos > introH){
 			header.addClass("fixed");
 		}
+		if (scrollPos > 2){
+			let h1 = document.querySelector('h1');
+			h1.classList.add('active');
+		}
+		if (scrollPos > 80){
+			let p = document.querySelector('p');
+			p.classList.add('active');
+		}
 		else{
 			header.removeClass("fixed");
 		}
@@ -70,6 +78,7 @@ $(function(){
 	  arrows: false,
 	  dots: true
 	});
-		
+	
+
 
 });
