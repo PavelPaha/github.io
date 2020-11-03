@@ -572,6 +572,7 @@ footer{
 		color: transparent;
 		margin: 10px 0;
 		position: relative;
+        transition: 0.5s all;
 	}
 
 	.burger__item:before,
@@ -594,6 +595,22 @@ footer{
 	.burger__item:after{
 		bottom: -8px;
 	}
+
+.burger__item.active:before{
+    transform: rotate(45deg);
+    top: -3px;
+    height: 3px;
+    transition: 0.5s all;
+}
+.burger__item.active:after{
+    height: 3px;
+    transform: rotate(-45deg);
+    bottom: 0;
+    transition: 0.5s all;
+}
+.burger__item.active{
+    height: 0;
+}
 
 	/*features*/
 
@@ -702,8 +719,14 @@ footer{
 }
 
 
-@media (max-width: 320px){
-
+/*progress line*/
+/*=================*/
+.progress{
+    position: fixed;
+    left: 0;
+    top: 100;
+    width: 0%;
+    height: 4px;
+    background-color: #4B48C8;
+    z-index: 1001;
 }
-
-
