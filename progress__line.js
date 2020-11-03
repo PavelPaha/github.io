@@ -1,5 +1,5 @@
 let progress = document.querySelector(".progress");
-
+btn = document.querySelector('.burger__item');
 window.addEventListener('scroll', progressBar);
 
 function progressBar(e){
@@ -11,6 +11,6 @@ function progressBar(e){
 	progress.style.width = procent + "%";
 }
 function openMenu(){
-	btn = document.querySelector('.burger__item');
+
 	btn.classList.toggle('active');
 }

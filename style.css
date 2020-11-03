@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    all: none;
+    outline: none;
+}
 .container{
     width: 100%;
     max-width: 1200px;
