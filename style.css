@@ -35,6 +35,8 @@ body{
 	position: fixed;
 	background: #31344e;
 	height: auto;
+    left: 0;
+    top: 0;
 }
 
 .header.fixed .header__inner{
@@ -584,6 +586,7 @@ footer{
 		z-index: 1;
 		background: #fff;
 		position: absolute;
+        transition: 0.5s all;
 
 		
 	}
@@ -610,6 +613,8 @@ footer{
 }
 .burger__item.active{
     height: 0;
+    transform: rotate(-180deg);
+    transition: 0.3s all;
 }
 
 	/*features*/
