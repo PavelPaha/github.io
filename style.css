@@ -739,3 +739,15 @@ footer{
     background-color: #4B48C8;
     z-index: 1001;
 }
+
+
+/*3d cards*/
+.cards{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: 1s transform;
+}
+
+.card{
+    transition: 1s transform;
+}
