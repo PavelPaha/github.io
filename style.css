@@ -748,6 +748,6 @@ footer{
     transition: 1s transform;
 }
 
-.card{
-    transition: 1s transform;
+.card__item{
+    transition: 0.5s transform;
 }
